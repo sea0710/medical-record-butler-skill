@@ -1,0 +1,30 @@
+{
+  "feishu": {
+    "app_id": "cli_xxxxxxxxxxxxxx",
+    "app_secret": "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
+    "document_id": "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"
+  },
+  "user_info": {
+    "patient_name": "患者姓名",
+    "patient_gender": "男/女",
+    "patient_age": "年龄",
+    "diagnosis": "诊断(可选)"
+  },
+  "settings": {
+    "auto_update_feishu": true,
+    "show_trend_analysis": true,
+    "enable_alerts": true,
+    "language": "zh-CN"
+  },
+  "alerts": {
+    "enable_wbc_alert": true,
+    "enable_anc_alert": true,
+    "enable_plt_alert": true,
+    "enable_hb_alert": true,
+    "wbc_threshold": 4.0,
+    "anc_threshold": 1.5,
+    "plt_threshold": 100,
+    "hb_threshold_male": 120,
+    "hb_threshold_female": 110
+  }
+}
