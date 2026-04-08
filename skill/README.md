@@ -44,11 +44,13 @@
 
 | 级别 | 图标 | 含义 | 处理建议 |
 |------|------|------|----------|
-| 0级 | ✅ | 正常范围 | 无需处理 |
+| 0级 | (无标记) | 正常范围 | 无需处理 |
 | I级 | ⚠️ | 轻度异常 | 观察监测 |
 | II级 | 🟠 | 中度异常 | 建议就诊 |
 | III级 | 🔴 | 重度异常 | 紧急就医 |
 | IV级 | 🚨 | 极重度/危急值 | **立即就医** |
+
+> **注意**: 正常指标不加任何图标或✅，仅显示数值
 
 ### 💊 处理建议生成
 - 分级处理原则（来自出院医嘱）
@@ -83,10 +85,15 @@
 ```
 skill/
 ├── SKILL.md                              # Skill 核心定义文件
-├── sharing_guide.md                      # 部署与配置指南
+├── sharing_guide.md                       # 部署与配置指南
+├── scripts/
+│   └── feishu_api.py                      # 飞书表格API脚本（支持自定义配置）
 └── references/
     ├── blood_test_reference.json         # 血常规指标参考标准（6项指标）
-    └── status_standards.md               # 异常状态统一规范
+    ├── status_standards.md                # 异常状态统一规范
+    └── FORMAT_VALIDATION_RULES.md        # 格式验证规则
+
+config_example.json                        # 配置文件示例（公开，无敏感信息）
 ```
 
 ---
